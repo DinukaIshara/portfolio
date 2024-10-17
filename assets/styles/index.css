@@ -24,7 +24,7 @@ body {
 aside {
     position: fixed;
     left: 3%;
-    top: 35%;
+    top: 30%;
     bottom: 0;
     height: 350px;
     width: 50px;
@@ -57,7 +57,7 @@ aside>nav>a:hover {
 
 section {
     min-height: 100vh;
-    padding: 7rem 9% 2rem;
+    padding: 7rem 9% 1rem;
 }
 
 .home {
@@ -66,7 +66,7 @@ section {
 }
 
 .home .home-info {
-    max-width: 80rem;
+    max-width: 60rem;
 }
 
 .home-info h3 {
