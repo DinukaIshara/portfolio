@@ -134,6 +134,95 @@ section {
     box-shadow: none;
 }
 
+/*--------------------------------------------------------------------------*/
+
+.home .home-profession {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    transform: translateY(-50%);
+    width: 800px;
+    height: 100%;
+    /*background: #7cf03d;*/
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.home .home-profession .img-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 800px;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profession {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #7cf03d;
+    transform: rotate(calc(360deg / 4 * var(--i)));
+    transform-origin: 384px;
+    background: #1f242d;
+    padding: 13px 0;
+}
+
+.home .img-box .profession:nth-child(1) i {
+    margin-right: 15px;
+}
+
+.home .img-box .profession:nth-child(2),
+.home .img-box .profession:nth-child(3) {
+    padding-bottom: 20px;
+}
+
+.home .profession i {
+    font-size: 3.8rem;
+}
+
+.home .profession h3 {
+    font-size: 3.2rem;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.home .img-box .circle {
+    width: 560px;
+    height: 560px;
+    border: 3px solid #7cf03d;
+    border-radius: 50%;
+}
+
+.home .home-profession .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-top: 384px solid #7cf03d;
+    border-right: 384px solid #7cf03d;
+    border-bottom: 384px solid #7cf03d;
+    border-left: 384px solid transparent;
+}
+
+
+.home-img img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    pointer-events: none;
+}
+
+
 
 /* --------------------About Me Section------------------- */
 #about>h2 {
