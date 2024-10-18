@@ -9,8 +9,8 @@
     <link rel="icon" type="image/x-icon" href="assets/images/LogoPort.png
 "> <!--favicon-->
     <link rel="stylesheet" href="assets/styles/index.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Dinuka Ishara</title>
 
@@ -97,11 +97,11 @@
 
 <!-- -------------About section-------------- -->
 <section class="about" id="about">
-    <div class="about-img">
+    <div data-aos="fade-up" class="about-img">
         <img src="assets/images/myimage.png" alt="">
     </div>
     <div class="about-content">
-        <h2 class="heading">About <span>Me</span></h2>
+        <h2 class="heading">-About <span>Me-</span></h2>
         <br>
         <h3>Why Hire me?</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet aspernatur at blanditiis delectus deserunt dolore eaque, earum eos esse itaque libero minima officia pariatur praesentium quo repellendus. Qui, velit!</p>
@@ -113,7 +113,7 @@
 
 <section class="education">
     <div class="education-content">
-        <h2 class="heading">My <span>Education</span></h2>
+        <h2 class="heading">E<span>ducation</span></h2>
     </div>
 
     <div class="timeline">
@@ -184,7 +184,7 @@
 
 <!--My Skill Page-->
 <section class="skill" id="skill">
-<h2 class="heading">My <span>Skill</span></h2>
+<h2 class="heading">S<span>kill</span></h2>
     <div class="containerss">
         <div class="container1">
          <h3 class="sub-heading">Technical Skill</h3>
@@ -357,33 +357,38 @@
     </div>
 </section>
 
-<!--Awards Page-->
-<section class="awards">
-    <h2 class="heading">My <span>Awards</span></h2>
-
-</section>
-
 <!--Gallery Section-->
 <section class="gallery" id="galler">
-    <h2 class="heading">My <span>Gallery</span></h2>
-
+    <h2 class="heading">G<span>allery</span></h2>
+    <div class="banner">
+        <div class="slider" style="--quantity: 10">
+            <div class="item" style="--position: 1"><img src="assets/images/myg1.png" alt=""></div>
+            <div class="item" style="--position: 2"><img src="assets/images/myg2.png" alt=""></div>
+            <div class="item" style="--position: 3"><img src="assets/images/myg3.png" alt=""></div>
+            <div class="item" style="--position: 4"><img src="assets/images/myg4.png" alt=""></div>
+            <div class="item" style="--position: 5"><img src="assets/images/myg5.png" alt=""></div>
+            <div class="item" style="--position: 6"><img src="assets/images/myg6.png" alt=""></div>
+            <div class="item" style="--position: 7"><img src="assets/images/myg7.png" alt=""></div>
+            <div class="item" style="--position: 8"><img src="assets/images/myg8.jpg" alt=""></div>
+            <div class="item" style="--position: 9"><img src="assets/images/myg9.jpg" alt=""></div>
+            <div class="item" style="--position: 10"><img src="assets/images/myg10.jpg" alt=""></div>
+        </div>
+    </div>
 </section>
 
 <!--Service section-->
 <section class="service" id="service">
-    <h2 class="heading">My <span>Service</span></h2>
 
 </section>
 
 <!--My works Page (Projects and Assignment)-->
 <section class="my-works" id="my-works">
-    <h2 class="heading">My <span>Works</span></h2>
+
 
 </section>
 
 <!--Contact Page-->
-<section class="contact" id="contact">
-    <h2 class="heading">C<span>antact</span></h2>
+<section class="contacts" id="contact">
 
 </section>
 
@@ -413,5 +418,9 @@
     <p>Copyright © 2024 developed by Dinuka Ishara | All rights reserved</p>
 </footer>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
