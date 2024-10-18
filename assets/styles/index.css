@@ -440,23 +440,6 @@ section {
 }
 
 @media (max-width: 320px) {
-    .logo img {
-        width: 30px;
-    }
-
-    .logo h3 {
-        font-size: 10px;
-        top: 18px;
-        left: 3px;
-    }
-
-    .home {
-        position: relative;
-        top: 30px;
-        padding: 0 3% 23rem;
-        justify-content: center;
-        text-align: center;
-    }
     .home-info h3 {
         font-size: 2rem;
     }
@@ -465,85 +448,6 @@ section {
         font-size: 3.5rem;
     }
 
-    .home-info .social-media a {
-        margin: 2.5rem .75rem 3rem;
-    }
-
-    .home .home-profession {
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    .home .home-profession .overlay {
-        position: fixed;
-        top: 70rem;
-        left: 50%;
-        right: 0;
-        transform: rotate(90deg) translate(-50%,50%) scaleY(3);
-        border-width: 23.9rem;
-    }
-
-    .home .home-profession .img-box {
-        position: fixed;
-        top: 60%;
-        left: 0;
-        border-radius: 0;
-        width: 100%;
-    }
-
-    .home .home-info .btn-sci .btn {
-        position: relative;
-        top: -40px;
-        left: 20%;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .home .home-profession .img-box .profession {
-        padding: 0 13px;
-        left: auto;
-        transform-origin: 0;
-    }
-    .home .home-profession .img-box .profession:nth-child(1) {
-        transform: rotate(-90deg) translate(-120px, -210px);
-    }
-    .home .home-profession .img-box .profession:nth-child(1) i {
-        margin-right: 0;
-    }
-    .home .home-profession .img-box .profession:nth-child(2) {
-        transform: rotate(0deg) translate(0px, -335px);
-    }
-    .home .home-profession .img-box .profession:nth-child(3) {
-        transform: rotate(90deg) translate(-115px, -450px);
-    }
-    .home .home-profession .img-box .profession:nth-child(4) {
-        transform: rotate(180deg) translate(-220px, -335px);
-    }
-    .home .home-profession .img-box .circle {
-        position: fixed;
-        width: 670px;
-        height: 670px;
-        z-index: -1;
-    }
-
-
-    .about {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-
-    .about .about-content h2 {
-        text-align: center;
-    }
-    .about .about-img {
-        width: 70vw;
-        margin-top: 2rem;
-    }
-
-    .btn {
-        width: 60%;
-    }
 }
 
 
