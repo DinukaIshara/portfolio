@@ -1240,6 +1240,201 @@ section {
     color: var(--clr);
 }
 
+/*----------- My works-----------------*/
+
+                /*projects*/
+.sub-heading {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+.pro-card {
+    width: 280px;
+    height: 360px;
+    padding: 2rem 1rem;
+    background: white;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+    transition: 0.5s ease-in-out;
+    margin: 20px;
+}
+
+.pro-card:hover {
+    transform: translateY(20px);
+}
+
+.pro-card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+.pro-card:hover:before {
+    opacity: 1;
+}
+
+.pro-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pro-card .pro-info {
+    position: relative;
+    z-index: 3;
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+
+.pro-card:hover .pro-info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.pro-card .pro-info h1 {
+    margin: 0;
+}
+
+.pro-card .pro-info p {
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.pro-card .pro-info .pro-btn {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: white;
+    color: #1f242d;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.pro-card .pro-info .pro-btn:hover {
+    box-shadow: 0px 7px 10px rgb(47, 44, 44);
+}
+
+                /*Assignment*/
+.Ass-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+.Ass-container .ass-card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 300px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s;
+}
+
+.Ass-container .ass-card:hover {
+    height: 400px;
+}
+
+.Ass-container .ass-card .imgBx {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #1e1f22;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.Ass-container .ass-card:hover .imgBx {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 15px rgba(0,0,0,0.2);
+}
+
+
+.Ass-container .ass-card .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Ass-container .ass-card .pro-content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+    padding: 0 30px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.Ass-container .ass-card:hover .pro-content {
+    height: 250px;
+    top: 130px;
+}
+
+.Ass-container .ass-card .pro-content h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #1e1f22;
+}
+
+.Ass-container .ass-card .pro-content p {
+    color: #1e1f22;
+}
+
+.Ass-container .ass-card .pro-content a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    background: #7cf03d;
+    color: #1e1f22;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+
 
 /*-----------Contact form--------------*/
 
