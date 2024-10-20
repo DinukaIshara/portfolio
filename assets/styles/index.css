@@ -1471,6 +1471,20 @@ section {
     box-shadow: 0px 7px 10px rgb(47, 44, 44);
 }
 
+@media screen and (max-width: 480px) {
+    .pro-card {
+        width: 220px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .pro-card {
+        width: 200px;
+        height: 290px;
+    }
+}
+
                 /*Assignment*/
 .Ass-container {
     position: relative;
