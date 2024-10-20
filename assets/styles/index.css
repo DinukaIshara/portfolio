@@ -402,6 +402,11 @@ section {
         font-size: 1rem;
         color: white;
     }
+
+    .home .home-img img {
+        width: 400px;
+        right: -50px;
+    }
 }
 
 @media (max-width: 750px) {
@@ -421,12 +426,16 @@ section {
         font-size: 3.5rem;
     }
 
+    .home .home-img img {
+        visibility: hidden;
+    }
+
     .btn {
         width: 60%;
     }
 }
 
-@media (max-width: 375px) {
+@media screen and (max-width: 375px) {
     .home-info h3 {
         font-size: 1.8rem;
     }
@@ -455,9 +464,6 @@ section {
 
     .btn {
         width: 60%;
-    }
-    .home-img img {
-        overflow: hidden;
     }
 }
 
