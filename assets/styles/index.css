@@ -1312,9 +1312,6 @@ section {
 
 .container-service .box .content .icon {
     color: var(--clr);
-    width: 100px;
-    height: 100px;
-    box-shadow: 0 0 0 4px #2e2e2e, 0 0 0 6px var(--clr);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1326,7 +1323,11 @@ section {
 .container-service .box:hover .content .icon {
     background-color: var(--clr);
     color: #2e2e2e;
-    box-shadow: 0 0 0 4px #2e2e2e, 0 0 0 300px var(--clr);
+    box-shadow: 0 0 0 300px var(--clr);
+}
+
+.container-service .box .content .icon i {
+    font-size: 70px;
 }
 
 .container-service .box .content .text {
