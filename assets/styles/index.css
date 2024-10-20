@@ -1579,6 +1579,14 @@ section {
     margin: 3px;
 }
 
+@media screen and (max-width: 480px) {
+
+    .Ass-container .ass-card .imgBx {
+        width: 260px;
+        height: 180px;
+    }
+}
+
 
 
 /*-----------Contact form--------------*/
