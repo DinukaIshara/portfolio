@@ -410,10 +410,9 @@ section {
 }
 
 @media (max-width: 750px) {
-    .home-img img {
-        width: 300px;
+    .home .home-img img {
+        width: 250px;
         right: -60px;
-        overflow: hidden;
     }
 }
 
