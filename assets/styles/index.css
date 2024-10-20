@@ -404,6 +404,13 @@ section {
     }
 }
 
+@media (max-width: 750px) {
+    .home-img img {
+        width: 300px;
+        right: -60px;
+        overflow: hidden;
+    }
+}
 
 @media (max-width: 425px) {
     .home-info h3 {
@@ -448,6 +455,9 @@ section {
 
     .btn {
         width: 60%;
+    }
+    .home-img img {
+        overflow: hidden;
     }
 }
 
