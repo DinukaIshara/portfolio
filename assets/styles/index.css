@@ -263,9 +263,9 @@ section {
 
 .home-img img {
     position: absolute;
+    width: 600px;
     bottom: 0;
     right: 0;
-    width: 0;
     pointer-events: none;
     z-index: 10000;
 }
@@ -310,6 +310,10 @@ section {
         left: 0;
         border-radius: 0;
         width: 100%;
+    }
+
+    .home-img img {
+        width: 500px;
     }
 
     .home .home-info .btn-sci .btn {
@@ -766,11 +770,11 @@ section {
         margin: 50px auto;
     }
     .timeline::after{
-        left: 80px;
+        left: 18px;
     }
     .container {
-        width: 360px;
-        padding-left: 90px;
+        width: 335px;
+        padding-left: 20px;
     }
     .text-box {
         font-size: 13px;
@@ -783,7 +787,7 @@ section {
     }
 
     .left-container img, .right-container img {
-        left: 10px;
+        left: -51px;
     }
 
     .left-container-arrow, .right-container-arrow {
@@ -1077,6 +1081,87 @@ section {
     opacity: 0;
 }
 
+@media screen and (max-width: 1024px) {
+    .containerss {
+        flex-direction: column;
+        position: relative;
+        left: 0;
+    }
+
+    .container1, .container2 {
+        width: 100%;
+        height: auto;
+        padding: 20px 100px;
+        margin-left: 0;
+    }
+
+    .sub-heading {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .containerss {
+        flex-direction: column;
+        position: relative;
+        left: 0;
+    }
+
+    .container1, .container2 {
+        width: 100%;
+        height: auto;
+        padding: 20px 50px;
+        margin-left: 0;
+    }
+
+    .sub-heading {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .technical-bars {
+        grid-template-columns: 1fr;
+    }
+
+    .technical-bars .bar {
+        font-size: 20px;
+    }
+
+    .technical-bars .bar .indfo span {
+        font-size: 16px;
+    }
+
+    .technical-bars .bar .progress-line {
+        width: 200px;
+        height: 4px;
+    }
+
+    .radial-bars {
+        grid-template-columns: 1fr;
+    }
+
+    .radial-bars .radial-bar {
+        width: 100%;
+        margin: 20px auto;
+        height: 160px;
+        left: 0;
+    }
+
+    .radial-bars .radial-bar svg {
+        width: 120px;
+        height: 140px;
+    }
+
+    .radial-bar .percentage {
+        font-size: 16px;
+    }
+
+    .radial-bar .per-text {
+        font-size: 16px;
+    }
+}
+
 /*--------------Gallery Page-----------------------*/
 
 .banner{
@@ -1217,8 +1302,8 @@ section {
 
 .container-service .box .content .icon {
     color: var(--clr);
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     box-shadow: 0 0 0 4px #2e2e2e, 0 0 0 6px var(--clr);
     display: flex;
     justify-content: center;
@@ -1347,21 +1432,24 @@ section {
 }
 
 .pro-card .pro-info h1 {
-    margin: 0;
+    margin: 10px;
 }
 
 .pro-card .pro-info p {
     letter-spacing: 1px;
     font-size: 15px;
     margin-top: 8px;
+    margin-left: 10px;
     margin-bottom: 20px;
 }
 
 .pro-card .pro-info .pro-btn {
     text-decoration: none;
     padding: 0.5rem 1rem;
-    background: white;
-    color: #1f242d;
+    margin-left: 10px;
+    border-radius: 15px;
+    background: #1f242d;
+    color: #ffffff;
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
@@ -1463,6 +1551,7 @@ section {
     font-weight: 500;
     text-decoration: none;
     border-radius: 8px;
+    margin: 3px;
 }
 
 
@@ -1647,9 +1736,13 @@ section {
         grid-template-rows: auto;
         grid-template-areas: "form" "info" "map";
     }
-    .map {
-        min-height: 300px;
+    .contact .form {
+        max-width: 300px;
     }
+    .contact .info {
+        min-width: 300px;
+    }
+
     .formBox .row50 {
         display: flex;
         gap: 0;
@@ -1657,6 +1750,89 @@ section {
     }
     .inputBox {
         width: 100%;
+    }
+    .formBox .row50 {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .inputBox {
+        width: 100%;
+    }
+
+    .inputBox input[type="submit"] {
+        width: 100%;
+        padding: 12px 0;
+    }
+
+    .inputBox input,
+    .inputBox textarea {
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    .inputBox span {
+        font-size: 1.2em;
+    }
+
+    .info h3 {
+        font-size: 1.8em;
+    }
+
+    .info .infoBox div p,
+    .info .infoBox div a {
+        font-size: 1.2em;
+    }
+
+    .info .infoBox .social-media a {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.5rem;
+    }
+
+    .map iframe {
+        border-radius: 10px;
+    }
+}
+
+/* Styles for smaller mobile devices (up to 480px) */
+@media only screen and (max-width: 480px) {
+    .inputBox span {
+        font-size: 1em;
+    }
+
+    .inputBox input,
+    .inputBox textarea {
+        font-size: 0.9em;
+        padding: 6px;
+    }
+
+    .inputBox input[type="submit"] {
+        font-size: 1em;
+        padding: 10px 0;
+    }
+
+    .map {
+        max-width: 300px;
+    }
+
+    .info h3 {
+        font-size: 1.5em;
+    }
+
+    .info .infoBox div p,
+    .info .infoBox div a {
+        font-size: 1em;
+    }
+
+    .info .infoBox .social-media a {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.2rem;
+    }
+
+    .map iframe {
+        border-radius: 8px;
     }
 }
 
