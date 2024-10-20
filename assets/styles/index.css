@@ -821,6 +821,21 @@ section {
     }
 }
 
+@media screen and (max-width: 375px){
+    .container .text-box h2 {
+        font-size: 16px;
+    }
+
+    .container .text-box p {
+        font-size: 12px;
+    }
+
+    .container {
+        width: 300px;
+        padding-left: 20px;
+    }
+}
+
 /*-------------Skill page-----------------*/
 .containerss {
     display: flex;
