@@ -405,7 +405,7 @@ section {
 
     .home .home-img img {
         width: 400px;
-        right: -50px;
+        /*right: -50px;*/
     }
 }
 
@@ -638,21 +638,6 @@ section {
     width: 50%;
     background: transparent;
     animation: movedown 1s linear forwards;
-}
-
-@keyframes movedown {
-    0% {
-        opacity: 0.2;
-        transform: translateY(-30px);
-    }
-    50% {
-        opacity: 0.5;
-        transform: translateY(-15px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
 }
 
 .container:nth-child(1){
@@ -1615,9 +1600,6 @@ section {
         height: 180px;
     }
 }
-
-
-
 /*-----------Contact form--------------*/
 
 .contacts {
