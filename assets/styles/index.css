@@ -581,6 +581,10 @@ section {
         z-index: 1000;
     }
 
+    .nav-menu ul li a i {
+        z-index: 10000;
+    }
+
     .home-info h3 {
         font-size: 2rem;
     }
