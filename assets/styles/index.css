@@ -472,6 +472,10 @@ section {
     .btn {
         width: 60%;
     }
+
+    .about .about-img img {
+        width: 70vw;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -632,7 +636,8 @@ section {
 }
 
 .about-img img {
-    width: 40vw;
+    width: 25vw;
+    margin-right: 50px;
 }
 
 .heading {
@@ -1493,20 +1498,19 @@ section {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 100px 50px;
-    padding: 100px 50px;
+    padding: 60px 0;
+    gap: 60px;
 }
-.pro-card {
-    width: 280px;
-    height: 360px;
-    padding: 2rem 1rem;
-    background: white;
+
+.wrapper .pro-card {
     position: relative;
+    width: 300px;
+    height: 350px;
+    background-color: white;
     display: flex;
     align-items: flex-end;
-    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
     transition: 0.5s ease-in-out;
-    margin: 20px;
+    margin: 10px;
 }
 
 .pro-card:hover {
@@ -1583,19 +1587,6 @@ section {
     box-shadow: 0px 7px 10px rgb(47, 44, 44);
 }
 
-@media screen and (max-width: 480px) {
-    .pro-card {
-        width: 220px;
-        height: 300px;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .pro-card {
-        width: 200px;
-        height: 290px;
-    }
-}
 
                 /*Assignment*/
 .Ass-container {
@@ -1693,11 +1684,42 @@ section {
 
 @media screen and (max-width: 480px) {
 
+    .Ass-container .ass-card:hover{
+        height: 500px;
+    }
+
     .Ass-container .ass-card .imgBx {
         width: 260px;
         height: 180px;
     }
+
+    .Ass-container .ass-card:hover .pro-content {
+        height: 450px;
+        top: 130px;
+    }
+
 }
+
+@media screen and (max-width: 320px) {
+    .Ass-container .ass-card:hover{
+        height: 550px;
+    }
+
+    .Ass-container .ass-card .imgBx {
+        width: 200px;
+        height: 120px;
+    }
+
+    .Ass-container .ass-card:hover .pro-content {
+        height: 450px;
+        top: 80px;
+    }
+
+    .Ass-container .ass-card .pro-content h2 {
+        font-size: 13px;
+    }
+}
+
 /*-----------Contact form--------------*/
 
 .contacts {
@@ -1885,6 +1907,10 @@ section {
         min-width: 300px;
     }
 
+    .contact .map {
+        max-width: 300px;
+    }
+
     .formBox .row50 {
         display: flex;
         gap: 0;
@@ -1939,6 +1965,9 @@ section {
 
 /* Styles for smaller mobile devices (up to 480px) */
 @media only screen and (max-width: 480px) {
+    .home {
+        overflow: hidden;
+    }
     .inputBox span {
         font-size: 1em;
     }
@@ -1955,7 +1984,7 @@ section {
     }
 
     .map {
-        max-width: 300px;
+        max-width: 400px;
     }
 
     .info h3 {
