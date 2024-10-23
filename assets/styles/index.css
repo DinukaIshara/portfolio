@@ -46,37 +46,84 @@ span {
 }
 
 /* Style for Aside Section */
-aside {
+/*aside {*/
+/*    position: fixed;*/
+/*    left: 2.5%;*/
+/*    top: 30%;*/
+/*    bottom: 0;*/
+/*    height: 350px;*/
+/*    width: 50px;*/
+/*    border-radius: 50px;*/
+/*    background-color: #1e1f22;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    z-index: 2000;*/
+/*}*/
+
+/*aside>nav {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*}*/
+
+/*aside>nav>a {*/
+/*    padding: 8px;*/
+/*    font-size: 20px;*/
+/*    color: #00ff00;*/
+/*    margin: 0 8px;*/
+/*}*/
+
+/*aside>nav>a:hover {*/
+/*    color: #ffffff;*/
+/*}*/
+
+.nav-menu {
     position: fixed;
-    left: 2.5%;
-    top: 30%;
-    bottom: 0;
-    height: 350px;
-    width: 50px;
-    border-radius: 50px;
+    left: 3%;
+    top: 52%;
     background-color: #1e1f22;
+    border-radius: 25px;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2000;
 }
 
-aside>nav {
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: max-content;
+    height: max-content;
+    transition: 1s;
+}
+
+.nav-menu ul li {
+    width: 60px;
+    height: 60px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    backdrop-filter: blur(10px);
+    transition: 1.3s;
 }
 
-aside>nav>a {
-    padding: 8px;
+.nav-menu ul li a i {
     font-size: 20px;
-    color: #00ff00;
-    margin: 0 8px;
+    color: #7cf03d;
 }
 
-aside>nav>a:hover {
+.nav-menu ul li a i:hover {
     color: #ffffff;
 }
+
+.nav-menu ul li a i:active {
+    color: #ffffff;
+}
+
 
 
 /*-------------------------------Home Section------------------------------------*/
@@ -421,6 +468,7 @@ section {
 }
 
 @media (max-width: 768px) {
+
     .logo img {
         width: 30px;
     }
@@ -430,6 +478,68 @@ section {
         top: 18px;
         left: 3px;
     }
+
+    /*aside {*/
+    /*    position: fixed;*/
+    /*    inset: auto 0 0 0;*/
+    /*    border-bottom: 20px solid white;*/
+    /*    width: min(500px,100%);*/
+    /*    --w-h-item: 60px;*/
+    /*    --position-x-active: 170px;*/
+    /*}*/
+
+    /*aside .nav-list {*/
+    /*    padding: 0;*/
+    /*    margin: 0;*/
+    /*    display: grid;*/
+    /*    grid-template-columns: repeat(5,var(--w-h-item));*/
+    /*    justify-content: space-between;*/
+    /*}*/
+
+    /*aside .nav-list a {*/
+    /*    display: flex;*/
+    /*    justify-content: center;*/
+    /*    align-items: center;*/
+    /*    font-size: 16px;*/
+    /*    transition: 0.5s;*/
+    /*}*/
+
+    /*aside .nav-list a.active {*/
+    /*    transform: translateY(-10px);*/
+    /*}*/
+
+    /*aside .effect {*/
+    /*    position: absolute;*/
+    /*    width: 100%;*/
+    /*    left: 0;*/
+    /*    bottom: 0;*/
+    /*    height: calc(var(--w-h-item) + 10px);*/
+    /*    z-index: -1;*/
+    /*    overflow: hidden;*/
+    /*}*/
+
+    /*aside .effect::before {*/
+    /*    position: absolute;*/
+    /*    left: 0;*/
+    /*    bottom: 0;*/
+    /*    height: var(--w-h-item);*/
+    /*    width: var(--position-x-active);*/
+    /*    background-color: black;*/
+    /*    content: '';*/
+    /*    border-top-right-radius: 30px;*/
+    /*    transition: 0.5s;*/
+    /*}*/
+
+    /*aside .effect::after {*/
+    /*    position: absolute;*/
+    /*    bottom: 0;*/
+    /*    right: 0;*/
+    /*    height: var(--w-h-item);*/
+    /*    content: '';*/
+    /*    background-color: #1e1f22;*/
+    /*    width: calc(100% - var(--position-x-active) - var(--w-h-item) - 10px);*/
+    /*    border-top-left-radius: 30px;*/
+    /*}*/
 
     .home-info h3 {
         font-size: 2.2rem;
@@ -456,7 +566,20 @@ section {
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 450px) {
+    .nav-menu {
+        position: fixed;
+        left: 40%;
+    }
+
+    .nav-menu ul li {
+        position: relative;
+        float: left;
+        bottom: 0;
+        right: 0;
+        top: 90%;
+    }
+
     .home-info h3 {
         font-size: 2rem;
     }
