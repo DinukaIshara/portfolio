@@ -570,6 +570,7 @@ section {
     .nav-menu {
         position: fixed;
         left: 40%;
+        float: left;
     }
 
     .nav-menu ul li {
@@ -577,7 +578,7 @@ section {
         float: left;
         bottom: 0;
         right: 0;
-        top: 90%;
+        top: 100%;
         z-index: 1000;
     }
 
