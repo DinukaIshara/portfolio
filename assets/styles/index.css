@@ -568,12 +568,19 @@ section {
 
 @media (max-width: 450px) {
     .nav-menu {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .nav-menu nav {
         position: fixed;
-        left: 37%;
-        justify-content: center;
-        align-items: center;
-        top: 70%;
-        width: 100%;
+        bottom: 10%;
+        width: 300px;
+        background-color: #1e1f22;
+        left: 50%;
+        /*margin-left: -228px;*/
+        padding: 0;
+        border-radius: 40px;
     }
 
     .nav-menu ul li {
